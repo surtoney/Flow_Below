@@ -1,0 +1,76 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            font-family: 'Lucida Console', monospace;
+        }
+
+        .hero {
+            position: relative;
+            background-image:
+                linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(0, 238, 255, 0.322) 100%),
+                url('/images/Flow-Futuristic_Front.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 150px 20px 50px;
+            color: rgba(255, 0, 0, 0);
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        main {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 255, 200, 0.308);
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            padding: 20px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            text-align: center;
+            flex: 1;
+            box-shadow: 5px 5px 15px rgba(255, 0, 76, 0.3);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease
+        }
+
+        .small-box {
+            width: 150px;
+            height: auto;
+            padding: 0px;
+            overflow: hidden;
+            border: 1px solid gray;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0, 4, 255, 0.3);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .small-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .small-box:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 20px rgba(255, 0, 76, 0.3);
+        }
